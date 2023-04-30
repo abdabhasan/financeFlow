@@ -1,0 +1,128 @@
+@import "../../variables/variables";
+.hero {
+  .hero__container {
+    display: flex;
+    align-items: center;
+
+    .hero__container_heading {
+      h1 {
+        font-family: $fontFamily;
+        max-width: 738px;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 80px;
+
+        color: $colorWhite;
+        letter-spacing: -1px;
+      }
+      p {
+        font-family: $fontFamily;
+        max-width: 568px;
+        font-size: 18px;
+        line-height: 32px;
+        color: $colorWhite;
+
+        margin-top: 0.5rem;
+      }
+      .hero__container_heading_btns {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        gap: 1rem;
+
+        margin-top: 3rem;
+      }
+    }
+    .hero__container_img {
+      position: relative;
+      .l-screens {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 59.26%;
+        right: -4.24%;
+        top: 4.08%;
+        bottom: 87.82%;
+
+        filter: blur(150px);
+        z-index: -1;
+        overflow-x: hidden;
+        background: rgba(136, 183, 2, 0.2);
+      }
+    }
+  }
+}
+
+@media screen and ($max-xl) {
+  .hero__container_heading {
+    h1 {
+      font-size: 45px !important;
+      line-height: 48px !important;
+    }
+    p {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+    .hero__container_heading_btns {
+      margin-top: 2rem !important;
+    }
+  }
+}
+
+@media screen and ($min-l) {
+  .hero {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and ($max-l) {
+  .hero__container {
+    flex-direction: column;
+    gap: 5rem;
+
+    .hero__container_heading {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+      h1 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+      }
+    }
+    .hero__container_img {
+      .xl-screens {
+        display: none;
+      }
+      .l-screens {
+        display: block !important;
+      }
+    }
+  }
+}
+@media screen and ($max-s) {
+  .hero__container {
+    .hero__container_heading {
+      gap: 0.5rem !important;
+      h1 {
+        font-size: 26px !important;
+        line-height: 34px !important;
+      }
+      p {
+        font-size: 14px !important;
+        line-height: 22px !important;
+      }
+      .hero__container_heading_btns {
+        flex-direction: column !important;
+      }
+    }
+  }
+}

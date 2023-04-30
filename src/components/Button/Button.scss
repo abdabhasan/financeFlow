@@ -1,0 +1,44 @@
+@import "../../variables/variables.scss";
+.btn-primary,
+.btn-secondary,
+.btn-white {
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  border-radius: 80px;
+  border: none;
+  outline: none;
+
+  transition: $transition;
+}
+.btn-primary {
+  background: $btnPrimaryBg;
+  color: $btnPrimaryTextColor;
+  &:hover {
+    background: $btnPrimaryBgHovered;
+    color: $btnPrimaryTextColorHovered;
+  }
+}
+.btn-secondary {
+  background: $btnSecondaryBg;
+  color: $btnSecondaryTextColor;
+  &:hover {
+    background: $btnSecondaryBgHovered;
+  }
+}
+.btn-white {
+  background: $btnWitheBg;
+  color: $btnWitheTextColor;
+  &:hover {
+    background: $btnWitheBgHovered;
+  }
+}

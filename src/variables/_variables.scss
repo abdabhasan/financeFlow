@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+$fontFamily: "DM Sans", sans-serif;
+
+// colors
+$colorPrimary: #88b702;
+$colorWhite: #fff;
+$colorDark: #050605;
+$colorDimWhite: rgba(255, 255, 255, 0.1);
+// backgrounds
+$bgColor: $colorDark;
+$bgMenu: $colorDark;
+// buttons
+
+$btnPrimaryTextColor: $colorWhite;
+$btnSecondaryTextColor: $colorWhite;
+$btnWitheTextColor: $colorPrimary;
+
+$btnPrimaryBg: $colorPrimary;
+$btnSecondaryBg: $colorDimWhite;
+$btnWitheBg: $colorWhite;
+
+// --- buttons hovered
+$btnPrimaryBgHovered: $colorDark;
+$btnSecondaryBgHovered: $colorPrimary;
+$btnWitheBgHovered: $colorDark;
+
+$btnPrimaryTextColorHovered: $colorPrimary;
+
+// transition
+$transition: 0.3s all ease;
+
+// media queries
+
+$max-xxl: "max-width: 1400px";
+$max-xl: "max-width: 1200px";
+$max-l: "max-width: 992px";
+$max-md: "max-width: 768px";
+$max-s: "max-width: 576px";
+$min-l: "min-width: 992px";
