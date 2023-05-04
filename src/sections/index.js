@@ -1,1 +1,9 @@
 export { default as Hero } from "./Hero/Hero";
+export { default as BuildCryptoPortfolio } from "./BuildCryptoPortfolio/BuildCryptoPortfolio";
+export { default as Rewards } from "./Rewards/Rewards";
+export { default as SecondRewards } from "./SecondRewards/SecondRewards";
+export { default as Explore } from "./Explore/Explore";
+export { default as Reviews } from "./Reviews/Reviews";
+export { default as GetStarted } from "./GetStarted/GetStarted";
+export { default as News } from "./News/News";
+export { default as DownloadApp } from "./DownloadApp/DownloadApp";

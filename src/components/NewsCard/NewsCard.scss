@@ -1,0 +1,99 @@
+@import "../../variables/variables";
+.news-card {
+  .news-card_container {
+    background: $bgNewsCard;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .news-card_container_img {
+      flex: 1;
+      border-radius: 40px;
+      img {
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .news-card_container_body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 1rem 1rem;
+      .news-card_container_body_btn {
+        transform: translateY(-50%);
+        button {
+          padding: 15px;
+        }
+      }
+      .news-card_container_body_heading {
+        padding-bottom: 2rem;
+        position: relative;
+        h4 {
+          max-width: 328px;
+          font-family: $fontFamily;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 31px;
+          color: $colorWhite;
+        }
+        p {
+          font-family: $fontFamily;
+          color: $colorWhite;
+          max-width: 329px;
+          font-size: 18px;
+          line-height: 32px;
+          padding: 2rem 0;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: $colorDimWhite;
+        }
+      }
+      .news-card_container_body_author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .news-card_container_body_author-img {
+          img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+        }
+        .news-card_container_body_author-name {
+          h5 {
+            max-width: 113px;
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+
+            color: $colorWhite;
+          }
+          p {
+            max-width: 126px;
+            font-family: $fontFamily;
+            font-size: 15px;
+            line-height: 18px;
+
+            margin-top: 0.25rem;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+
+            color: $colorWhite;
+          }
+        }
+      }
+    }
+  }
+}

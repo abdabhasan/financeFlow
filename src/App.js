@@ -20,7 +20,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NoPage />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

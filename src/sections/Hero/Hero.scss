@@ -3,7 +3,7 @@
   .hero__container {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     .hero__container_heading {
       h1 {
         font-family: $fontFamily;

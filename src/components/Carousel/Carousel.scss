@@ -1,0 +1,82 @@
+@import "../../variables/variables";
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+
+  .carousel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 65px 50px 66px;
+    gap: 25px;
+
+    max-width: 586px;
+    background: $bgCommentCard;
+    border-radius: 40px;
+
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+    &.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &.prev-next {
+      opacity: 0.75;
+      z-index: 0;
+    }
+
+    .carousel-card__text {
+      p {
+        max-width: 468px;
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+        color: $colorWhite;
+      }
+    }
+    .carousel-card__author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+      }
+      .carousel-card__author_info {
+        h2 {
+          font-family: $fontFamily;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 18px;
+
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+
+          color: $colorWhite;
+        }
+        p {
+          font-family: $fontFamily;
+          font-size: 16px;
+          line-height: 18px;
+
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}
+@media screen and ($max-l) {
+  .carousel {
+    flex-direction: column;
+  }
+}

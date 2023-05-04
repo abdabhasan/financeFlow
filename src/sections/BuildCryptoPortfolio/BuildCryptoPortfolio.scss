@@ -1,0 +1,94 @@
+@import "../../variables/variables";
+.build-crypto {
+  .build-crypto__container {
+    position: relative;
+
+    .build-crypto__container_heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      h1 {
+        max-width: 534px;
+        color: $colorWhite;
+
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+      }
+      p {
+        color: $colorWhite;
+        max-width: 496px;
+
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+    .build-crypto__container_cards {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: 47.79%;
+        right: 7.18%;
+        bottom: 30.79%;
+
+        filter: blur(200px);
+        background: rgba(136, 183, 2, 0.3);
+        z-index: -1;
+      }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .build-crypto__container_cards-col {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+
+        &.second-col {
+          .portfolio-card__container {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .build-crypto__container_btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      margin-top: 1.5rem;
+      button {
+        padding: 25px;
+      }
+    }
+  }
+}
+
+@media ($max-xl) {
+  .build-crypto__container_cards {
+    grid-template-columns: 1fr !important;
+    .portfolio-card__container {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media ($max-s) {
+  .build-crypto__container_cards {
+    grid-template-columns: 1fr !important;
+    .portfolio-card__container {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
