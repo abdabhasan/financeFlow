@@ -1,3 +1,4 @@
+@import "../../variables/variables";
 .no-page {
   display: flex;
   flex-direction: column;
@@ -6,12 +7,67 @@
   height: 80vh;
   font-size: 2rem;
   text-align: center;
-  .no-page h1 {
-    font-size: 6rem;
-    margin-bottom: 2rem;
+  position: relative;
+  h1 {
+    max-width: 359px;
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 160px;
+
+    color: $colorPrimary;
+  }
+  h2 {
+    max-width: 310px;
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    letter-spacing: -0.42px;
+
+    color: $colorWhite;
   }
 
-  .no-page p {
-    font-size: 2rem;
+  p {
+    max-width: 557px;
+
+    font-family: $fontFamily;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: $colorWhite;
+  }
+  .no-page_btns {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      padding: 25px;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 60%;
+
+    background: $colorDimWhite;
+    filter: blur(200px);
+  }
+}
+
+@media screen and ($max-s) {
+  .no-page {
+    h1 {
+      font-size: 120px;
+      line-height: 120px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .no-page_btns {
+      flex-direction: column;
+    }
   }
 }

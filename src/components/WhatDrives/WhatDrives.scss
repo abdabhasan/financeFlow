@@ -1,0 +1,71 @@
+@import "../../variables/variables";
+.what-drives {
+  .what-drives_container {
+    .what-drives_container_heading {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        max-width: 539px;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+
+        color: $colorWhite;
+      }
+      p {
+        max-width: 496px;
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+@media screen and ($max-l) {
+  .what-drives {
+    .what-drives_container {
+      .what-drives_container_heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and ($max-md) {
+  .what-drives {
+    .what-drives_container {
+      .what-drives_container_heading {
+        h1 {
+          font-size: 34px !important;
+          line-height: 44px !important;
+        }
+        p {
+          font-size: 16px !important;
+          line-height: 28px !important;
+        }
+      }
+    }
+  }
+}
+@media screen and ($max-s) {
+  .what-drives {
+    .what-drives_container {
+      .what-drives_container_heading {
+        h1 {
+          font-size: 24px !important;
+          line-height: 38px !important;
+        }
+        p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+    }
+  }
+}

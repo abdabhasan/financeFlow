@@ -1,0 +1,35 @@
+@import "../../../variables/variables";
+
+.investors {
+  .investors__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    .investors__container_heading {
+      h1 {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+
+        color: $colorWhite;
+      }
+      p {
+        max-width: 496px;
+
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: $colorWhite;
+      }
+    }
+    .investors__container_brands {
+      .brand {
+        padding-top: 2rem !important;
+      }
+    }
+  }
+}

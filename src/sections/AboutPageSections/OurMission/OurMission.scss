@@ -1,0 +1,63 @@
+@import "../../../variables/variables";
+.mission {
+  padding-right: 0 !important;
+  .mission__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    .mission__container_heading {
+      padding-right: 2rem;
+      h1 {
+        max-width: 243px;
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+
+        color: $colorWhite;
+      }
+      p {
+        max-width: 607px;
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: $colorWhite;
+      }
+    }
+    .mission__container_img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and ($max-l) {
+  .mission {
+    .mission__container {
+      flex-direction: column;
+      align-items: unset;
+    }
+  }
+}
+
+@media screen and ($max-s) {
+  .mission {
+    .mission__container {
+      .mission__container_heading {
+        h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

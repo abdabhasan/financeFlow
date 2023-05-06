@@ -1,0 +1,46 @@
+@import "../../variables/variables";
+.drives-card {
+  .drives-card_container {
+    display: flex;
+    align-items: self-start;
+    gap: 2rem;
+    background: $bgAboutCard;
+
+    padding: 2rem 1rem;
+    border-radius: 40px;
+    .drives-card_container_img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .drives-card_container_body {
+      h4 {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        color: $colorWhite !important;
+      }
+      p {
+        max-width: 402px;
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+@media screen and ($max-s) {
+  .drives-card {
+    .drives-card_container {
+      flex-direction: column;
+    }
+  }
+}

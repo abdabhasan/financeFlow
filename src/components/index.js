@@ -12,3 +12,7 @@ export { default as Carousel } from "./Carousel/Carousel";
 export { default as NewsCard } from "./NewsCard/NewsCard";
 export { default as DownloadCardIos } from "./DownloadCardIos/DownloadCardIos";
 export { default as DownloadCardAndroid } from "./DownloadCardAndroid/DownloadCardAndroid";
+export { default as WhatDrives } from "./WhatDrives/WhatDrives";
+export { default as DrivesCard } from "./DrivesCard/DrivesCard";
+export { default as TimelineItem } from "./TimelineItem/TimelineItem";
+export { default as TeamMemberCard } from "./TeamMemberCard/TeamMemberCard";

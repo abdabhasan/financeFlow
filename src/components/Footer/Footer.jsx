@@ -1,27 +1,28 @@
+import { Link } from "react-router-dom";
 import { Button, Logo, SocialMedia, Copyright } from "../index";
 import "./Footer.scss";
 const Menu = () => (
   <div className="menu">
     <div>
       <p>
-        <a href="#home">Home</a>
+        <Link to="/">Home</Link>
       </p>
       <p>
-        <a href="#about">About</a>
+        <Link to="about">About</Link>
       </p>
       <p>
-        <a href="#pricing">Pricing</a>
+        <Link to="pricing">Pricing</Link>
       </p>
     </div>
     <div>
       <p>
-        <a href="#tokens">Tokens</a>
+        <Link to="tokens">Tokens</Link>
       </p>
       <p>
-        <a href="#blog">Blog</a>
+        <Link to="blog">Blog</Link>
       </p>
       <p>
-        <a href="#contact">Contact Us</a>
+        <Link to="contact">Contact Us</Link>
       </p>
     </div>
   </div>

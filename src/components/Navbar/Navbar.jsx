@@ -1,26 +1,27 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Logo, Button } from "../index";
 import "./Navbar.scss";
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <Link to="/">Home</Link>
     </p>
     <p>
-      <a href="#about">About</a>
+      <Link to="about">About</Link>
     </p>
     <p>
-      <a href="#pricing">Pricing</a>
+      <Link to="pricing">Pricing</Link>
     </p>
     <p>
-      <a href="#tokens">Tokens</a>
+      <Link to="tokens">Tokens</Link>
     </p>
     <p>
-      <a href="#blog">Blog</a>
+      <Link to="blog">Blog</Link>
     </p>
     <p>
-      <a href="#contact">Contact Us</a>
+      <Link to="contact">Contact Us</Link>
     </p>
   </>
 );
@@ -28,7 +29,7 @@ const Menu = () => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="navbar">
+    <nav className="navbar  mx-5 my-3">
       <div className="navbar__links">
         <div className="navbar__links_logo">
           <Logo />
