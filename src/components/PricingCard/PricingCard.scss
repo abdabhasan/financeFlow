@@ -1,0 +1,81 @@
+@import "../../variables/variables";
+.pricing-card {
+  .pricing-card__container {
+    background-color: $bgPricingCard;
+    border-radius: 40px;
+    padding: 2rem;
+    .pricing-card__container_plan {
+      button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        padding: 0.5rem 1rem;
+      }
+    }
+    .pricing-card__container_price {
+      h1 {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+
+        color: $colorWhite;
+        margin: 1rem 0;
+      }
+      p {
+        max-width: 321px;
+
+        font-family: $fontFamily;
+        font-size: 18px;
+        line-height: 32px;
+
+        color: $colorWhite;
+      }
+    }
+    .pricing-card__container_features {
+      h5 {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+
+        color: $colorWhite;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-family: $fontFamily;
+          font-size: 18px;
+          line-height: 20px;
+
+          color: $colorWhite;
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+
+            left: -1rem;
+
+            background: $colorPrimary;
+            border-radius: 1000px;
+          }
+        }
+      }
+    }
+    .pricing-card__container_btn {
+      margin-top: 3rem;
+      button {
+        width: 100%;
+        padding: 25px;
+      }
+    }
+  }
+}

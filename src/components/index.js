@@ -16,3 +16,4 @@ export { default as WhatDrives } from "./WhatDrives/WhatDrives";
 export { default as DrivesCard } from "./DrivesCard/DrivesCard";
 export { default as TimelineItem } from "./TimelineItem/TimelineItem";
 export { default as TeamMemberCard } from "./TeamMemberCard/TeamMemberCard";
+export { default as PricingCard } from "./PricingCard/PricingCard";
