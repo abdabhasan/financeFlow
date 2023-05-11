@@ -1,0 +1,88 @@
+@import "../../variables/variables";
+.token {
+  p {
+    margin: 0;
+  }
+  .token-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 1000px;
+    }
+    h4 {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+
+      margin: 0;
+      color: $colorWhite;
+    }
+    p {
+      font-family: $fontFamily;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+
+      color: $colorWhite;
+      background-color: $colorDimWhite;
+      padding: 6.5px 8.10312px 7.5px 8.30313px;
+      margin: 0;
+      border-radius: 1000px;
+    }
+  }
+  .description {
+    p {
+      width: 258px;
+      height: 52px;
+
+      /* Desktop/body 2 */
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+
+      /* or 162% */
+      display: flex;
+      align-items: center;
+
+      /* white */
+      color: #ffffff;
+    }
+  }
+  .market-cap {
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: $colorWhite;
+  }
+  .volume {
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: $colorWhite;
+  }
+  .website {
+    a {
+      font-family: $fontFamily;
+      font-size: 16px;
+      line-height: 26px;
+
+      text-decoration-line: underline !important;
+
+      color: $colorWhite;
+    }
+  }
+}
