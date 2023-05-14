@@ -1,0 +1,120 @@
+@import "../../variables/variables";
+.contact {
+  .contact__container {
+    .contact__container_heading {
+      h1 {
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 80px;
+        letter-spacing: -1px;
+        color: $colorWhite;
+        margin-bottom: 3rem;
+      }
+    }
+    .contact__container_touch {
+      display: flex;
+      align-items: self-start;
+      justify-content: space-between;
+      gap: 3rem;
+      .contact__container_touch_from {
+        form {
+          label {
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+
+            color: $colorWhite;
+            margin-bottom: 1rem;
+          }
+          input {
+            padding: 1.5rem 1.75rem;
+
+            height: 68px;
+            background: $colorDimWhite;
+            margin-bottom: 1rem;
+
+            border: 1px solid #050605;
+            border-radius: 100px;
+            &::placeholder {
+              font-size: 18px;
+              line-height: 27px;
+
+              color: $colorWhite;
+            }
+          }
+          textarea {
+            padding: 1.5rem 1.75rem;
+
+            height: 162px;
+
+            background: $colorDimWhite;
+
+            border: 1px solid #010725;
+            border-radius: 14px;
+            &::placeholder {
+              font-family: $fontFamily;
+              font-size: 18px;
+              line-height: 27px;
+
+              color: $colorWhite;
+            }
+          }
+          button {
+            padding: 1.75rem;
+            margin-top: 3rem;
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      }
+      .contact__container_touch_reach {
+        h4 {
+          font-family: $fontFamily;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 31px;
+
+          letter-spacing: 0.22px;
+
+          color: $colorWhite;
+        }
+        p {
+          max-width: 377px;
+          font-family: $fontFamily;
+          font-size: 18px;
+          line-height: 32px;
+
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}
+
+@media screen and($max-l) {
+  .contact {
+    .contact__container {
+      .contact__container_touch {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and($max-md) {
+  .contact {
+    .contact__container {
+      .contact__container_heading {
+        h1 {
+          font-size: 38px;
+          line-height: 46px;
+        }
+      }
+    }
+  }
+}

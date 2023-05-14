@@ -18,3 +18,4 @@ export { default as TimelineItem } from "./TimelineItem/TimelineItem";
 export { default as TeamMemberCard } from "./TeamMemberCard/TeamMemberCard";
 export { default as PricingCard } from "./PricingCard/PricingCard";
 export { default as Token } from "./Token/Token";
+export { default as CTA } from "./CTA/CTA";
