@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/financeFlow/static/css/main.90902117.css",
+    "main.js": "/financeFlow/static/js/main.b99ad959.js",
+    "static/media/planet.png": "/financeFlow/static/media/planet.9846156c565b416efa53.png",
+    "static/media/person2.png": "/financeFlow/static/media/person2.43f66b5a983fdfd629d0.png",
+    "static/media/person1.png": "/financeFlow/static/media/person1.bccb5e9d5f3cbe23f407.png",
+    "static/media/Hcard.png": "/financeFlow/static/media/Hcard.f93b6f3954cca64bb313.png",
+    "static/media/news.png": "/financeFlow/static/media/news.66d15d26ffb08acbb2a3.png",
+    "static/media/explorePhones.png": "/financeFlow/static/media/explorePhones.50c17fe2e93a6c9536fc.png",
+    "static/media/rewardsPhone.png": "/financeFlow/static/media/rewardsPhone.5b8275023b677a1337c5.png",
+    "index.html": "/financeFlow/index.html",
+    "main.90902117.css.map": "/financeFlow/static/css/main.90902117.css.map",
+    "main.b99ad959.js.map": "/financeFlow/static/js/main.b99ad959.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90902117.css",
+    "static/js/main.b99ad959.js"
+  ]
+}
